@@ -9,7 +9,7 @@ var TodoList = React.createClass({
           return(
             //react need Key to distinguish different components
             //assigin key to with id
-            <Todo key={todo.id} {...todo}/>
+            <Todo key={todo.id} {...todo} onToggle={this.props.onToggle}/>
           );
         });
     };
