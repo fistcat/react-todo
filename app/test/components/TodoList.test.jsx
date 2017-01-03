@@ -25,7 +25,7 @@ describe('TodoList',()=>{
 
     expect(todosComponents.length).toBe(todos.length);
   });
-  it('should render one Todo components for each todo item', () =>{
+  it('should render one message when nothing todo', () =>{
     var todos = [];
     var todoList = TestUtils.renderIntoDocument(<TodoList todos={todos}/>);
     var $el = $(ReactDOM.findDOMNode(todoList));
